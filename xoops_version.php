@@ -1,56 +1,50 @@
 <?php
-//  ------------------------------------------------------------------------ //
-// 本模組由 tad 製作
-// 製作日期：2015-05-04
-// $Id:$
-// ------------------------------------------------------------------------- //
-
-$modversion = array();
+$modversion = [];
 
 //---模組基本資訊---//
 $modversion['name']        = _MI_TADSITEMA_NAME;
-$modversion['version']     = '1.2';
+$modversion['version']     = '1.7';
 $modversion['description'] = _MI_TADSITEMA_DESC;
 $modversion['author']      = _MI_TADSITEMA_AUTHOR;
 $modversion['credits']     = _MI_TADSITEMA_CREDITS;
 $modversion['help']        = 'page=help';
 $modversion['license']     = 'GPL see LICENSE';
 $modversion['image']       = "images/logo_{$xoopsConfig['language']}.png";
-$modversion['dirname']     = basename(dirname(__FILE__));
+$modversion['dirname']     = basename(__DIR__);
 
 //---模組狀態資訊---//
-$modversion['release_date']        = '2017-01-08';
-$modversion['module_website_url']  = 'http://tad0616.net';
+$modversion['release_date']        = '2020/04/11';
+$modversion['module_website_url']  = 'https://tad0616.net';
 $modversion['module_website_name'] = _MI_TADSITEMA_AUTHOR_WEB;
 $modversion['module_status']       = 'release';
-$modversion['author_website_url']  = 'http://tad0616.net';
+$modversion['author_website_url']  = 'https://tad0616.net';
 $modversion['author_website_name'] = _MI_TADSITEMA_AUTHOR_WEB;
-$modversion['min_php']             = 5.3;
+$modversion['min_php']             = 5.4;
 $modversion['min_xoops']           = '2.5';
 
 //---paypal資訊---//
-$modversion['paypal']                  = array();
+$modversion['paypal']                  = [];
 $modversion['paypal']['business']      = 'tad0616@gmail.com';
 $modversion['paypal']['item_name']     = 'Donation :' . _MI_TADSITEMA_AUTHOR;
 $modversion['paypal']['amount']        = 0;
 $modversion['paypal']['currency_code'] = 'USD';
 
 //---安裝設定---//
-$modversion['onInstall']   = "include/onInstall.php";
-$modversion['onUpdate']    = "include/onUpdate.php";
-$modversion['onUninstall'] = "include/onUninstall.php";
+// $modversion['onInstall'] = 'include/onInstall.php';
+// $modversion['onUpdate'] = 'include/onUpdate.php';
+// $modversion['onUninstall'] = 'include/onUninstall.php';
 
 //---啟動後台管理界面選單---//
 $modversion['system_menu'] = 1;
 
 //---資料表架構---//
-$modversion['sqlfile']['mysql'] = "sql/mysql.sql";
-$modversion['tables'][1]        = "tad_sitemap";
+$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
+$modversion['tables'][1]        = 'tad_sitemap';
 
 //---管理介面設定---//
 $modversion['hasAdmin']   = 1;
-$modversion['adminindex'] = "admin/main.php";
-$modversion['adminmenu']  = "admin/menu.php";
+$modversion['adminindex'] = 'admin/main.php';
+$modversion['adminmenu']  = 'admin/menu.php';
 
 //---使用者主選單設定---//
 $modversion['hasMain'] = 1;
